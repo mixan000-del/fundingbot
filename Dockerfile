@@ -9,7 +9,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY bot_binance.py .
 
-VOLUME ["/data"]
 ENV STATE_FILE=/data/binance_funding_state.json
 
 ENV POLL_SEC=30
